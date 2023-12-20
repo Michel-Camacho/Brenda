@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+/*Nav-bar*/
+
+header *{
+    display: flex;
+    justify-content: space-between;
+    min-height: fit-content; 
+    background-color: rgb(220, 164, 164, 100%);
+}
+
+nav img {
+    border: solid #c7b1c6;
+    border-radius: 20%;
+}
+
+header img {
+    max-width: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+header a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 20px;
+}
+
+/*Foto-1*/
+
+.foto1 {
+    background-image: url(Imagenes/foto1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    letter-spacing: 2,5;
+    border: solid black;
+    border-radius: 30px;
+    min-height: 1000px;
+    min-width: fit-content;
+    margin-top: 2rem;
+}
+
+.titulo {
+    font-size: 4rem;   
+    padding: 5rem;
+    margin-top: 5rem;
+}
+
+.nombre {
+    font-size: 8rem;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    padding: 3rem;
+}
+
+.texto1 {
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+.link-de-reservas {
+    font-size: 2rem;
+    padding: 2rem;
+    padding: 3rem;
+}
+
+/*Sobre Mi*/
+
+.contenedor {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 30px;
+    border: solid black;
+    background-color: rgb(220, 164, 164, 100%);
+    display: flow-root;
+}
+
+.contenedor img {
+    max-width: fit-content;
+    border-radius: 60px;
+    border: solid rgb(185, 102, 192);
+    margin: 1rem;
+    float: left;
+}
+
+.texto2 {
+   padding: 1.5rem;
+}
+
+.texto2 h3 {
+    font-size: 3rem;
+    font-family: 'Sirin Stencil', sans-serif;
+}
+
+.texto2 p {
+    font-weight: 550;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.5rem;
+}
+
+/*foto 2*/
+
+.foto2 {
+    background-image: url(Imagenes/servicios.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    letter-spacing: 2,5;
+    border: solid black;
+    border-radius: 30px;
+    min-height: 1000px;
+    min-width: fit-content;
+    margin-top: 2rem;
+}
+
+.foto2 h2 {
+    font-family: 'Playfair Display', serif; 
+    font-size: 7rem;
+    font-weight: 900;
+    margin-top: 2rem;
+}
+
+.foto2 p {
+    font-family: 'Playfair Display', serif;   
+    font-size: 5rem;
+    color: #fff;
+    border: solid black;
+    border-radius: 80px;
+    background-color: #694747;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+    margin-right: 4rem;
+}
+
+.foto2 h3 {
+    font-size: 5rem;
+    justify-content: space-around;
+    margin-top: 4rem;   
+}
+
+.foto2 a {
+    font-family: 'Sirin Stencil', sans-serif;
+}
+
+
+
+
+
+
+
+
+
