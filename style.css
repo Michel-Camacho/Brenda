@@ -261,8 +261,9 @@ header a{
   place-items: center;
 }
 
-.iconos-de-contatos a{
-  border: none;
+.iconos-de-contatos h3{
+  display: grid;
+  grid-column: span 8;
 }
 
 
