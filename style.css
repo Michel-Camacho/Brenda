@@ -9,7 +9,6 @@ body {
 }
 
 /*NAV-BAR*/
-
 header *{
   display: flex;
   justify-content: space-between;
@@ -39,7 +38,6 @@ header a{
 }
 
 /*FOTO 1*/
-
 .foto1 {
   background-image: url(Imagenes/foto1.jpg);
   background-position: center center;
@@ -47,7 +45,7 @@ header a{
   background-size: cover;
   text-align: center;
   letter-spacing: 2,5;
-  border: solid black;
+  border: solid 1px black;
   border-radius: 10px;
   min-height: 1000px;
   min-width: fit-content;
@@ -80,45 +78,54 @@ header a{
 }
    
 /*SOBRE MI*/
+.about {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border: 1px solid black;
+  padding-block: 1rem;
+  margin-block: 1rem;
+  background-color: rgb(177, 125, 125);
+}
 
-.contenedor {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.about img {
   border-radius: 10px;
-  border: solid black;
-  background-color: rgb(220, 164, 164, 100%);
-  display: flow-root;
-}
-
-.contenedor img {
-  max-width: fit-content;
-  border-radius: 20px;
-  border: solid rgb(185, 102, 192);
-  margin: 1rem;
+  max-width: 320px;
   float: left;
+  margin: auto;
 }
 
-.texto2 {
-  padding: 1.5rem;
+@media (max-width: 768px) {
+  .about{
+    display: block;
+  }
+
+  .about img{
+    width: 100%;
+    align-content: center;
+    padding-inline: 0.5rem;
+  }
+  
 }
 
-.texto2 h3 {
-  font-size: 3rem;
-  color: #fff;
-  font-family: 'Sirin Stencil', sans-serif;  
+.text2{
+  margin: 1rem;
 }
 
-.texto2 p {
-  font-weight: 550;
-  font-size: 1.5rem;
+.text2 h3{
+  align-items: center;
+  font-size: 2rem;
+  color: #ddd;
+  font-family: 'Sirin Stencil', sans-serif;
+}
+
+.text2 p{
+  text-align: start;
+  font-size: larger;
+  text-wrap: wrap;
   font-family: 'Playfair Display', serif;
-  color: #000000;
-  letter-spacing: 0.1rem;
-  word-spacing: 0.5rem;
 }
 
 /*FOTO 2*/
-
 .foto2 {
   background-image: url(Imagenes/servicios.png);
   background-position: center center;
@@ -126,7 +133,7 @@ header a{
   background-size: cover;
   text-align: center;
   letter-spacing: 2,5;
-  border: solid black;
+  border: solid 1px black;
   border-radius: 10px;
   min-height: 1000px;
   min-width: fit-content;
@@ -167,7 +174,7 @@ header a{
   display: flex; 
   justify-content: center;
   align-items: center;
-  border: solid black;
+  border: solid 1px black;
   border-radius: 10px;
   background-color: rgb(220, 164, 164, 100%);
   margin-top: 1.5rem;
@@ -196,10 +203,10 @@ header a{
 .wrap {
   padding: 1rem;
   border-radius: 10px;
-  border: solid black;
+  border: solid 1px black;
   background-color: rgb(220, 164, 164, 100%);
-  height: 350px;
-  width: 300px;
+  min-height: 350px;
+  min-width: 300px;
   
 }
 
@@ -215,6 +222,14 @@ header a{
 .wrap p {
   font-family: 'Playfair Display', serif;
   text-align: center;
+  line-height: 2em;
+}
+
+pre{
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+  min-height: 250px;
+  min-width: 300px;
 }
 
 /*CLASES*/
@@ -232,9 +247,18 @@ header a{
  max-width: 100%;
 }
 
-.box, img{
+.box-clases img{
   padding: 1rem;
   max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .box-clases{
+    display: block; 
+  }
+  .box-clases img{
+    width: 100%;
+  }
 }
 
 .titulo-clases {
@@ -265,6 +289,11 @@ header a{
   display: grid;
   grid-column: span 8;
 }
+
+
+
+  
+
 
 
 
