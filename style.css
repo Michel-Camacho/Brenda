@@ -14,6 +14,7 @@ header *{
   justify-content: space-between;
   min-height: fit-content; 
   background-color: rgb(220, 164, 164, 100%);
+  margin-bottom: 1rem;
 }
 
 nav img {
@@ -47,34 +48,40 @@ header a{
   letter-spacing: 2,5;
   border: solid 1px black;
   border-radius: 10px;
-  min-height: 1000px;
-  min-width: fit-content;
-  margin-top: 1.5rem;
+  height: 1200px;
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .foto1{
+    width: 100%;
+  }
 }
 
 .titulo {
   font-family: 'Sirin Stencil', sans-serif;
-  font-size: 4rem;   
-  padding: 5rem;
-  margin-top: 5rem;
+  font-size: 5vw;   
+  padding: 2rem;
 }
 
 .nombre {
-  font-size: 8rem;
+  font-size: 8vw;
   font-weight: 900;
   font-family: 'Playfair Display', serif;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .texto1 {
-  font-size: 2rem;
-  padding: 3rem;
+  font-size: 5vw;
+  padding: 2rem;
 }
 
 .foto1 a {
-  font-size: 2rem;
+  font-size: 3vw;
   border: solid black;
   color: #fff;
+  margin-block: 5rem;
 }
    
 /*SOBRE MI*/
@@ -116,6 +123,7 @@ header a{
   font-size: 2rem;
   color: #ddd;
   font-family: 'Sirin Stencil', sans-serif;
+  text-decoration: underline;
 }
 
 .text2 p{
@@ -157,9 +165,8 @@ header a{
   background: hsl(0, 0%, 100% / 0.1);
   backdrop-filter: blur(1rem);
   margin-top: 2rem;
-  margin-left: 4rem;
   margin-bottom: 4rem;
-  margin-right: 4rem;
+  margin-inline: 4rem;
 }
 
 .foto2 h3 {
@@ -171,15 +178,13 @@ header a{
 
 /*SERVICIOS*/
 .servicios {
-  display: flex; 
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   border: solid 1px black;
   border-radius: 10px;
-  background-color: rgb(220, 164, 164, 100%);
+  background-color: rgb(177, 125, 125);
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  padding: 30px;
+  padding-block: 1rem;
 }
 
 .servicios h2 {
@@ -207,7 +212,6 @@ header a{
   background-color: rgb(220, 164, 164, 100%);
   min-height: 350px;
   min-width: 300px;
-  
 }
 
 .wrap h3 {
@@ -264,8 +268,8 @@ pre{
 .titulo-clases {
   text-align: center;
   padding-block: 1rem;
-  font-size: clamp(3rem, 50%, 1rem);
-  background-color: rgb(220, 164, 164, 100%);
+  font-size: clamp(3rem, 100%, 1rem);
+  background-color: rgb(177, 125, 125);
   color: #ffffff;
   border-radius: 10px;
   border: 1px solid black;
