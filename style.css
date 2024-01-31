@@ -5,85 +5,96 @@
 }
 
 body {
-  padding: 1rem;
+  
 }
 
 /*NAV-BAR*/
-header *{
-  display: flex;
-  justify-content: space-between;
-  min-height: fit-content; 
-  background-color: rgb(220, 164, 164, 100%);
-  margin-bottom: 1rem;
+.menu{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
 }
 
-nav img {
-  border: solid #c7b1c6;
-  border-radius: 10px;
+@media (max-width: 768px) {
+  .menu{
+    display: block;
+  }
 }
 
-header img {
-  max-width: 120px;
-  margin: 0;
-  padding: 0;
-}
-
-header a{
-  text-decoration: none;
-  text-transform: capitalize;
-  color: #fff;
+.menu a {
+  position: relative;
   font-family: 'Sirin Stencil', sans-serif;
   font-size: 2rem;
-  font-weight: 800;
-  margin: 20px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
 }
 
-/*FOTO 1*/
+.menu a::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+  transform: scale(0);
+}
+
+.menu a:hover::after{
+  transform: scale(1); 
+}
+
+.menu a:hover{
+  background-color: rgb(192, 126, 126);
+  transition: 0.5s ease-in-out;
+}
+
 .foto1 {
-  background-image: url(Imagenes/foto1.jpg);
+  display: grid;
+  background-image: url(Imagenes/foto1.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   letter-spacing: 2,5;
-  border: solid 1px black;
-  border-radius: 10px;
-  height: 1200px;
-  width: 80%;
-  margin: auto;
+  height: 100vh;
+  width: 100vw;
 }
 
-@media (max-width: 768px) {
-  .foto1{
-    width: 100%;
-  }
-}
-
-.titulo {
+.foto1 h2 {
   font-family: 'Sirin Stencil', sans-serif;
-  font-size: 5vw;   
-  padding: 2rem;
+  font-size: 4vw;   
+  color: #d374bb;
 }
 
-.nombre {
+.foto1 h1 {
   font-size: 8vw;
   font-weight: 900;
   font-family: 'Playfair Display', serif;
-  padding: 2rem;
+  text-decoration: underline overline;
 }
 
-.texto1 {
+.foto1 p {
   font-size: 5vw;
-  padding: 2rem;
+  color: #d374bb;
 }
 
-.foto1 a {
-  font-size: 3vw;
-  border: solid black;
+.agenda a{
+  align-items: end;
+  border: 3px solid white;
+  padding: 1rem;
   color: #fff;
-  margin-block: 5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
-   
+
+.agenda a:hover{
+  background-color: rgb(177, 125, 125);
+  transition: .5s ease-in-out;
+}
+
 /*SOBRE MI*/
 .about {
   display: grid;
