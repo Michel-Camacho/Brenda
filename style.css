@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/*NAV-BAR*/
+/*---------NAV-BAR---------*/
 .menu{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -93,7 +93,7 @@
   transition: .5s ease-in-out;
 }
 
-/*SOBRE MI*/
+/*---------SOBRE MI---------*/
 .about {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -102,6 +102,7 @@
   padding-block: 1rem;
   margin-block: 1rem;
   background-color: rgb(177, 125, 125);
+  margin-inline: 1rem;
 }
 
 .about img {
@@ -143,7 +144,13 @@
   font-family: 'Playfair Display', serif;
 }
 
-/*FOTO 2*/
+/*---------FOTO2---------*/
+.foto2{
+  display: grid;
+  grid-template-rows: auto;
+  margin: auto;
+}
+
 .foto2 {
   background-image: url(Imagenes/servicios.png);
   background-position: center center;
@@ -151,60 +158,62 @@
   background-size: cover;
   text-align: center;
   letter-spacing: 2,5;
-  border: solid 1px black;
   border-radius: 10px;
-  min-height: 1000px;
-  min-width: fit-content;
-  margin-top: 1.5rem;
+  max-height: fit-content;
+  margin-inline: 1rem;
 }
 
 .foto2 h2 {
   font-family: 'Sirin Stencil', sans-serif;
   font-size: 7rem;
   font-weight: 900;
-  margin-top: 2rem;
   color: #fff;
+}
+
+.foto2-titulo 
+.lista-de-servicios{
+  container-type: inline-size;
+}
+
+.foto2-titulo > h2 {
+  font-size: 7cqi;
+}
+
+.lista-de-servicios > p, h3 {
+  font-size: 5cqi;
 }
 
 .foto2 p {
   font-family: 'Playfair Display', serif;   
-  font-size: 5rem;
   color: #000;
   border: solid black;
   border-radius: 10px;
   background: hsl(0, 0%, 100% / 0.1);
   backdrop-filter: blur(1rem);
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  margin-inline: 4rem;
+  width: fit-content;
+  margin: auto;
 }
 
 .foto2 h3 {
-  font-size: 5rem;
   justify-content: space-around;
-  margin-top: 4rem;
-  color: #6845c9;   
+  margin-block: 2rem;
+  color: #d297e0;   
 }
 
-/*SERVICIOS*/
-.servicios {
+/*----------SERVICIOS----------*/
+.novias-y-quinceañeras {
   text-align: center;
   border: solid 1px black;
   border-radius: 10px;
   background-color: rgb(177, 125, 125);
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  padding-block: 1rem;
-}
-
-.servicios h2 {
-  word-spacing: 2rem;
-  font-size: 3rem;
-  font-family: 'Sirin Stencil', sans-serif;
+  margin-block: 1.5rem;
+  padding-block: .5rem;
   color: #fff;
+  font-size: 2rem;
+  font-family: 'Sirin Stencil', sans-serif;
 }
 
-/* SERVICIOS-GRID*/
+/*---------SERVICIOS-GRID---------*/
 .box {
   padding-bottom: 1.5rem;
   display: grid;
@@ -216,7 +225,8 @@
 }
 
 .wrap {
-  padding: 1rem;
+  margin-inline: 1rem;
+  padding: .5rem;
   border-radius: 10px;
   border: solid 1px black;
   background-color: rgb(220, 164, 164, 100%);
@@ -236,7 +246,8 @@
 .wrap p {
   font-family: 'Playfair Display', serif;
   text-align: center;
-  line-height: 2em;
+  line-height: 1.5em;
+  font-size: large;
 }
 
 pre{
@@ -246,7 +257,7 @@ pre{
   min-width: 300px;
 }
 
-/*CLASES*/
+/*---------CLASES----------*/
 
 .box-clases{
   display: grid;
@@ -277,15 +288,16 @@ pre{
 
 .titulo-clases {
   text-align: center;
-  padding-block: 1rem;
+  padding-block: .5rem;
   font-size: clamp(3rem, 100%, 1rem);
   background-color: rgb(177, 125, 125);
   color: #ffffff;
   border-radius: 10px;
   border: 1px solid black;
+  font-family: 'Sirin Stencil', sans-serif;
 }
 
-/*CONTACTOS  Y REDES SOCIALES */
+/*---------CONTACTOS  Y REDES SOCIALES--------- */
 .contactos{
   text-align: center;
   color: #6845c9;
@@ -293,7 +305,7 @@ pre{
 
 .iconos-de-contatos {
   border: solid 1px #000000;
-  background-color: rgb(220, 164, 164, 100%);
+  background-color: rgb(177, 125, 125);
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   place-items: center;
@@ -302,6 +314,7 @@ pre{
 .iconos-de-contatos h3{
   display: grid;
   grid-column: span 8;
+  font-size: 2rem
 }
 
 
