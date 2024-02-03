@@ -5,28 +5,38 @@
 }
 
 /*---------NAV-BAR---------*/
-.menu{
+nav {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  place-items: center;
+  z-index: 1;
+  border: 1px solid black;
+}
+
+nav{
+  height: fit-content;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 @media (max-width: 768px) {
-  .menu{
+  nav{
     display: block;
   }
 }
 
-.menu a {
+nav a {
   position: relative;
   font-family: 'Sirin Stencil', sans-serif;
   font-size: 2rem;
   color: #fff;
   font-weight: 600;
   text-decoration: none;
+  border: 1px solid black;
+  background-color: rgb(124, 99, 235);
 }
 
-.menu a::after{
+nav a::after{
   content: "";
   position: absolute;
   bottom: -5px;
@@ -38,16 +48,16 @@
   transform: scale(0);
 }
 
-.menu a:hover::after{
+nav a:hover::after{
   transform: scale(1); 
 }
 
-.menu a:hover{
+nav a:hover{
   background-color: rgb(192, 126, 126);
   transition: 0.5s ease-in-out;
 }
 
-.foto1 {
+header {
   display: grid;
   background-image: url(Imagenes/foto1.webp);
   background-position: center center;
@@ -59,36 +69,40 @@
   letter-spacing: 2,5;
   height: 100vh;
   width: 100vw;
+  padding-top: 6rem;
 }
 
-.foto1 h2 {
+header h2 {
   font-family: 'Sirin Stencil', sans-serif;
   font-size: 4vw;   
-  color: #d374bb;
+  color: rgb(124, 99, 235);
 }
 
-.foto1 h1 {
+header h1 {
   font-size: 8vw;
   font-weight: 900;
   font-family: 'Playfair Display', serif;
   text-decoration: underline overline;
 }
 
-.foto1 p {
+header p {
   font-size: 5vw;
-  color: #d374bb;
+  color: rgb(124, 99, 235);
 }
 
-.agenda a{
-  align-items: end;
-  border: 3px solid white;
+header a{
   padding: 1rem;
   color: #fff;
   font-size: 1.5rem;
   text-decoration: none;
 }
 
-.agenda a:hover{
+.reserva a{
+  border:1px solid #fff;
+  text-align: center;
+}
+
+.reserva a:hover{
   background-color: rgb(177, 125, 125);
   transition: .5s ease-in-out;
 }
@@ -197,7 +211,7 @@
 .foto2 h3 {
   justify-content: space-around;
   margin-block: 2rem;
-  color: #d297e0;   
+  color: #662f1f;   
 }
 
 /*----------SERVICIOS----------*/
