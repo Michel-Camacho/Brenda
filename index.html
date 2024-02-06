@@ -19,13 +19,22 @@
 
 <body>
   <header>
-        <nav nav-bar>
-          <a href="#">Sobre mí</a>
-          <a href="#">Servicios</a>
-          <a href="#">Contactos</a>
-          <a href="#">Redes</a>
-          <a href="#">Reservas</a>
-        </nav>
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a  href=""><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="#">Sobre mí</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contactos</a></li>
+        <li><a href="#">Redes</a></li>
+        <li><a href="#">Reservas</a></li>
+      </ul>
+          <a class="hideOnMobile" href="#">Sobre mí</a>
+          <a class="hideOnMobile" href="#">Servicios</a>
+          <a class="hideOnMobile" href="#">Contactos</a>
+          <a class="hideOnMobile" href="#">Redes</a>
+          <a class="hideOnMobile" href="#">Reservas</a>
+          <a class="menu-button" onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+    </nav>
       <h2>Beauty Shop</h2>
       <h1>Brenda Calderon</h1>
       <p>Bienbenidos a nuestra tienda virtual</p>
@@ -126,6 +135,8 @@
     <a href="https://www.tiktok.com/es/" target="_blank"><img src="Imagenes/icons8-tiktok-48.png"></a>
     <a href="https://www.instagram.com/" target="_blank"><img src="Imagenes/instagram-icon.png"></a>
   </div>
-</body>
 
-</html>
+  <script src="./index.js"></script>
+
+</body>
+  </html>
