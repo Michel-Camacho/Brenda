@@ -4,12 +4,14 @@
   box-sizing: border-box;
 }
 
+body{
+  min-height: 100vh;
+}
 /*---------NAV-BAR---------*/
 nav {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   z-index: 1;
-  border: 1px solid black;
 }
 
 nav{
@@ -32,8 +34,7 @@ nav a {
   color: #fff;
   font-weight: 600;
   text-decoration: none;
-  border: 1px solid black;
-  background-color: rgb(124, 99, 235);
+  background-color: rgba(201, 142, 98, 0.63);
 }
 
 nav a::after{
@@ -63,8 +64,8 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-bottom-right-radius:;
+  border-bottom-left-radius: ;
   text-align: center;
   letter-spacing: 2,5;
   height: 100vh;
@@ -75,7 +76,7 @@ header {
 header h2 {
   font-family: 'Sirin Stencil', sans-serif;
   font-size: 4vw;   
-  color: rgb(124, 99, 235);
+  color: #662f1f;   
 }
 
 header h1 {
@@ -87,7 +88,7 @@ header h1 {
 
 header p {
   font-size: 5vw;
-  color: rgb(124, 99, 235);
+  color: #662f1f;   
 }
 
 header a{
@@ -120,10 +121,11 @@ header a{
 }
 
 .about img {
+  padding-left: .5rem;
   border-radius: 10px;
   max-width: 320px;
   float: left;
-  margin: auto;
+
 }
 
 @media (max-width: 768px) {
@@ -132,11 +134,17 @@ header a{
   }
 
   .about img{
+    display: grid;
+    place-content: center;
+    place-items: center;
     width: 100%;
-    align-content: center;
     padding-inline: 0.5rem;
+    margin: auto; 
   }
-  
+
+  .about h3{
+    text-align: center;
+  }
 }
 
 .text2{
@@ -218,13 +226,13 @@ header a{
 .novias-y-quinceañeras {
   text-align: center;
   border: solid 1px black;
-  border-radius: 10px;
   background-color: rgb(177, 125, 125);
   margin-block: 1.5rem;
   padding-block: .5rem;
   color: #fff;
   font-size: 2rem;
   font-family: 'Sirin Stencil', sans-serif;
+  margin-inline: 1rem;
 }
 
 /*---------SERVICIOS-GRID---------*/
@@ -306,9 +314,9 @@ pre{
   font-size: clamp(3rem, 100%, 1rem);
   background-color: rgb(177, 125, 125);
   color: #ffffff;
-  border-radius: 10px;
   border: 1px solid black;
   font-family: 'Sirin Stencil', sans-serif;
+  margin-inline: 1rem;
 }
 
 /*---------CONTACTOS  Y REDES SOCIALES--------- */
@@ -328,7 +336,9 @@ pre{
 .iconos-de-contatos h3{
   display: grid;
   grid-column: span 8;
-  font-size: 2rem
+  font-size: 3rem;
+  color: #fff;
+  font-family: 'Sirin Stencil', sans-serif;
 }
 
 
