@@ -366,8 +366,6 @@ strong{
 }
 
 /*---------CONTACTOS  Y REDES SOCIALES--------- */
-
-
 .titulo-footer h3 {
   border: 1px solid black;
   text-align: center;
@@ -380,31 +378,130 @@ strong{
 
 .contact-links{
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  place-items: center;
+  grid-template-columns: repeat(7, 1fr);
 }
 
-@media (max-width: 600px) {
-  .contact-links a{
+@media (min-width:800px) {
+  .contact-links{
     display: grid;
     grid-column: span 2;
-    margin-top: .5rem;
+
   }
-  
 }
 
-.contact-links a{
-  margin-block: 1rem;
+.contact-links .button{
+  height: 60px;
+  width: 60px;
+  float: left;
+  cursor: pointer;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+
+.contact-links .button:hover {
+  width: 200px;
+  border: 1px solid black;
+
+}
+
+.contact-links .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
   border: 1px solid black;
 }
 
-.contact-links a:hover{
-  
+.button:nth-child(1) .icon{
+  background: rgb(49, 211, 240);
+}
+
+.button:nth-child(2) .icon{
+  background: rgb(87, 240, 87);
+}
+
+.button:nth-child(3) .icon{
+  background: #4267B2;
+}
+
+.button:nth-child(4) .icon{
+  background: #ff0000;
+}
+
+.button:nth-child(5) .icon{
+  background: #746569;
+}
+
+.button:nth-child(6) .icon{
+  background: #4267B2;
+}
+
+.button:nth-child(7) .icon{
+  background: #db6211;
+}
+
+.button .icon a {
+  margin: 1rem;
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
 }
 
 
+.contact-links .button:hover .icon i {
+  color: #fff;
   
+}
 
+.contact-links .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+
+
+.contact-links .button:nth-child(1) span{
+  color: rgb(49, 211, 240);
+}
+
+.contact-links .button:nth-child(2) span{
+  color: rgb(87, 240, 87);
+}
+
+.contact-links .button:nth-child(3) span{
+  color: #4267B2;
+}
+
+.contact-links .button:nth-child(4) span{
+  color: #ff0000;
+}
+
+.contact-links .button:nth-child(5) span{
+  color: #E1306C;
+}
+
+.contact-links .button:nth-child(6) span{
+  color: #4267B2;
+}
+
+.contact-links .button:nth-child(7) span{
+  color: #db6211;
+  
+}
 
 
 
