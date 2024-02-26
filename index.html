@@ -22,103 +22,115 @@
 
 <body>
   <header>
-    <nav>
+    <nav class="menu">
       <ul class="sidebar">
-        <li onclick=hideSidebar()><a  href=""><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-        <li><a href="#">Sobre mí</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Precios</a></li>
-        <li><a href="#">Clases</a></li>
-        <li><a href="#">Contactos</a></li>
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#clases">Clases</a></li>
+        <li><a href="#contactos">Contactos</a></li>
       </ul>
-          <a class="hideOnMobile" href="#">Sobre mí</a>
-          <a class="hideOnMobile" href="#">Servicios</a>
-          <a class="hideOnMobile" href="#">Precios</a>
-          <a class="hideOnMobile" href="#">Clases</a>
-          <a class="hideOnMobile" href="#">Contactos</a>
-          <a class="menu-button" onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+        <a class="hideOnMobile" href="#sobre-mi">Sobre mí</a>
+        <a class="hideOnMobile" href="#servicios">Servicios</a>
+        <a class="hideOnMobile" href="#precios">Precios</a>
+        <a class="hideOnMobile" href="#clases">Clases</a>
+        <a class="hideOnMobile" href="#contactos">Contactos</a>
+        <a class="menu_button" onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+    
     </nav>
       <h2>Beauty Shop</h2>
       <h1>Brenda Calderon</h1>
       <p>Bienbenidos a nuestra tienda virtual</p>
       <div class="reserva">
-        <a href="#">Agenda Tu Cita Aquí</a>
+        <a href="#" target="_blank">Agenda Tu Cita Aquí</a>
       </div> 
   </header>
-  <div class="about">
-    <div class="profile-picture"> 
-      <img src="Imagenes/sobre-mi.webp" alt="foto de perfil">
-    </div>
-    <div class="text2">
-      <h3>Sobre Mi</h3>
-      <p>
-        Hola, mi nombre es Brenda Anabella Calderón, tengo 25 años y AMO el rubro de la
-        belleza. Soy alguien que se actualiza constantemente con las técnicas más destacadas en el mundo del
-        maquillaje y siempre me mantengo al tanto sobre las últimas tendencias. Siempre soñé con
-        llevar a cabo proyectos en base a mis conocimientos, y así poder ayudar a otras
-        personas asesorándolas en su imagen personal. De esta manera ganan autoestima,
-        confianza y seguridad en si mismas.
-      </p>
-    </dIv>
-  </div>
-  <div class="foto2">
-    <div class="foto2-titulo">
-      <h2>Servicios</h2>  
-    </div>
-    <div class="lista-de-servicios">
-      <p>Aquí encontraras el servicio ideal para tí</p>
-      <h3>Clases</h3>
-      <h3>Maquillaje Social</h3>
-      <h3>Maquillaje Para Novias</h3>
-      <h3>Maquillaje Para Quinceañeras</h3>
-    </div>
-  </div>
-  <div class="novias-y-quinceañeras">
-    <h2>Novias y Quinceañeras</h2>
-  </div>
-  <section class="box">
-    <div class="wrap">
-      <h3>Valores</h3>
-      <p>
-        La cotización del maquillaje dependerá de la complejidad del mismo. Se aconseja enviar referencias para un
-        presupuesto correcto. Esto esta sujeto a modificaciones ya que ciertas técnicas de full color y cortes de
-        tendencia
-        en “Instagram” no son considerados “Maquillajes Sociales”.
-      </p>
-    </div>
-    <div class="wrap">
-      <h3>Prueba De Maquillaje</h3>
-      <p>
-        Sera ideal para que la homenajeada decida que estilo de maquillaje usará acorde a sus gustos.
-        La misma se coordinará con anticipación de 15 días a un mes del evento.
-      </p>
-    </div>
-    <div class="wrap">
-      <h3>Reservacion</h3>
-      <p>
-      Si deseas reservar se coordina una fecha y horario a conveniencia abonando un 50% del valor del servicio.
-      Los viáticos de traslado de ida y vuelta se cotizan desde el domicilio del profesional hasta el domicilio del
-      cliente. Serán cotizados en el día del evento según la demanda de la aplicación a que se use para el traslado
-      (Uber,
-      Cabify, DIdi, Remis). Este debe ser abonado el mismo diá del evento.
-      </p>
-    </div>
-    <div class="wrap">
-      <h3>Maquillaje y peinado</h3>
-      <pre>
-      El mismo será realizado por:
 
-      Maquillaje profecional: 
-
-      <strong>Brenda Calderón </strong> 
-      
-      Peinador profecional:
-
-      <strong>Nicole Alem</strong>
-      </pre>
+  <section id="sobre-mi">
+    <div class="about">
+      <div class="profile-picture"> 
+        <img src="Imagenes/sobre-mi.webp" alt="foto de perfil">
+      </div>
+      <div class="text2">
+        <h3>Sobre Mi</h3>
+        <p>
+          Hola, mi nombre es Brenda Anabella Calderón, tengo 25 años y AMO el rubro de la
+          belleza. Soy alguien que se actualiza constantemente con las técnicas más destacadas en el mundo del
+          maquillaje y siempre me mantengo al tanto sobre las últimas tendencias. Siempre soñé con
+          llevar a cabo proyectos en base a mis conocimientos, y así poder ayudar a otras
+          personas asesorándolas en su imagen personal. De esta manera ganan autoestima,
+          confianza y seguridad en si mismas.
+        </p>
+      </dIv>
     </div>
   </section>
-  <h2 class="titulo-clases">clases de maquillaje</h2>
+
+  <section id="servicios">
+    <div class="foto2" >
+      <div class="foto2-titulo">
+        <h2>Servicios</h2>  
+      </div>
+      <div class="lista-de-servicios">
+        <p>Aquí encontraras el servicio ideal para tí</p>
+        <h3>Clases</h3>
+        <h3>Maquillaje Social</h3>
+        <h3>Maquillaje Para Novias</h3>
+        <h3>Maquillaje Para Quinceañeras</h3>
+      </div>
+    </div>
+  </section>
+  
+  <section id="precios">
+    <div class="novias-y-quinceañeras" id="precios">
+      <h2>Novias y Quinceañeras</h2>
+    </div>
+    <div class="box">
+      <div class="wrap">
+        <h3>Valores</h3>
+        <p>
+          La cotización del maquillaje dependerá de la complejidad del mismo. Se aconseja enviar referencias para un
+          presupuesto correcto. Esto esta sujeto a modificaciones ya que ciertas técnicas de full color y cortes de
+          tendencia
+          en “Instagram” no son considerados “Maquillajes Sociales”.
+        </p>
+      </div>
+      <div class="wrap">
+        <h3>Prueba De Maquillaje</h3>
+        <p>
+          Sera ideal para que la homenajeada decida que estilo de maquillaje usará acorde a sus gustos.
+          La misma se coordinará con anticipación de 15 días a un mes del evento.
+        </p>
+      </div>
+      <div class="wrap">
+        <h3>Reservacion</h3>
+        <p>
+          Si deseas reservar se coordina una fecha y horario a conveniencia abonando un 50% del valor del servicio.
+          Los viáticos de traslado de ida y vuelta se cotizan desde el domicilio del profesional hasta el domicilio del
+          cliente. Serán cotizados en el día del evento según la demanda de la aplicación a que se use para el traslado
+          (Uber,
+          Cabify, DIdi, Remis). Este debe ser abonado el mismo diá del evento.
+        </p>
+      </div>
+      <div class="wrap">
+        <h3>Maquillaje y peinado</h3>
+        <pre>
+          El mismo será realizado por:
+          
+          Maquillaje profecional: 
+          
+          <strong>Brenda Calderón </strong> 
+          
+          Peinador profecional:
+          
+          <strong>Nicole Alem</strong>
+        </pre>
+      </div>
+    </div>
+  </section>
+
+<section id="clases">
+  <h2 class="titulo-clases" id="clases">clases de maquillaje</h2>
   <div class="box-clases">
     <div class="fotos3">
       <img src="Imagenes/clases2.webp" alt="">
@@ -127,67 +139,51 @@
       <img src="Imagenes/clases1.webp" alt="#">
     </div>
   </div>
+</section>
   
-  <footer>
+  <footer id="contactos">
     <div class="titulo-footer">
       <h3>Contactos y Redes sociales</h3>
     </div>
 
     <div class="contact-links">
-
       <div class="button">
         <div class="icon">
           <a href="mailto:michel_310789@hotmail.com"><i class="fa-regular fa-envelope"></i></a>
         </div>
-          <span>E-mail</span>
+          <a href="mailto:michel_310789@hotmail.com"><span>E-mail</span></a>
       </div>
      
       <div class="button">
         <div class="icon">
           <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-          <span>Whatsapp</span>
+          <a href="https://www.whatsapp.com/?lang=es_LA"><span>Whatsapp</span></a>
       </div>
      
       <div class="button">
         <div class="icon">
           <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         </div>
-          <span>Facebook</span>
-      </div>
-     
-      <div class="button">
-        <div class="icon">
-          <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-          <span>YouTube</span>
-      </div>
-      
-      <div class="button">
-        <div class="icon">
-          <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-x-twitter"></i>  </a>
-        </div>
-          <span>X-Twitter</span>
+         <a href="https://www.facebook.com/?locale=es_LA"><span>Facebook</span></a>
       </div>
       
       <div class="button">
         <div class="icon">
           <a href="https://www.tiktok.com/es/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
         </div>
-          <span>TikTok</span>
+          <a href="https://www.tiktok.com/es/"><span>TikTok</span></a>
       </div>
      
       <div class="button">
         <div class="icon">
           <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
-          <span>Instagram</span>
+          <a href="https://www.instagram.com/"><span>Instagram</span></a>
       </div>
-
     </div>   
-
-    </footer>
-  <script src="./index.js"></script>
+  </footer>
+  <script src="./script.js"></script>
 
 </body>
   </html>

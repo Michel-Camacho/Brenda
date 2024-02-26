@@ -6,7 +6,33 @@
 
 body{
   min-height: 100vh;
+  background-color: #c990903d;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+#sobre-mi{
+  scroll-margin-top: 70px;
+} 
+
+#servicios{
+  scroll-margin-top: 70px;
+}
+
+#precios{
+  scroll-margin-top: 70px;
+} 
+
+#clases{
+  scroll-margin-top: 70px;
+} 
+
+#contactos{
+  scroll-margin-top: 70px;
+} 
+
 
 /*---------NAV-BAR---------*/
 nav {
@@ -101,6 +127,7 @@ header a{
   transition: .5s ease-in-out;
 }
 
+
 /*---------sidebar---------*/
 
 .sidebar {
@@ -129,15 +156,15 @@ header a{
   margin: 5px;
 }
 
-.menu-button{
+.menu_button{
   display: none;
 }
 
 @media (max-width: 800px) {
-  .hideOnMobile{
+  .hideOnMobile, ul{
     display: none;
   }
-  .menu-button{
+  .menu_button{
     display: block;
   }
 }
@@ -151,11 +178,11 @@ header a{
 /*---------SOBRE MI---------*/
 .about {
   display: flex;
-  border: 1px solid black;
+  border: 2px solid rgb(206, 125, 188);
   border-radius: 10px;
   padding-block: 1rem;
   margin-block: 1rem;
-  background-color: rgb(177, 125, 125);
+  background-color: #fff;
   margin-inline: 1rem;
 }
 
@@ -194,7 +221,7 @@ header a{
 .text2 h3{
   align-items: center;
   font-size: 2rem;
-  color: #ddd;
+  color: #000;
   font-family: 'Sirin Stencil', sans-serif;
   text-decoration: underline;
 }
@@ -290,16 +317,16 @@ header a{
   margin-inline: 1rem;
   padding: .5rem;
   border-radius: 10px;
-  border: solid 1px black;
-  background-color: rgb(220, 164, 164, 100%);
-  box-shadow: .5em .5em .5em rgba(0, 0, 0, 0.7);
+  border: 2px solid rgb(206, 125, 188);
+  background-color: #fff;
+  box-shadow: .4em .4em .4em rgba(218, 138, 221, 0.7);
   min-height: 350px;
   min-width: 300px;
 }
 
 .wrap h3 {
   font-family: 'Sirin Stencil', sans-serif; 
-  color: #fff;
+  color: #000;
   font-size: 2rem;
   text-align: center;
   text-decoration: underline ;
@@ -378,14 +405,14 @@ strong{
 
 .contact-links{
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
 }
 
 @media (min-width:800px) {
   .contact-links{
     display: grid;
     grid-column: span 2;
-
   }
 }
 
@@ -404,8 +431,6 @@ strong{
 
 .contact-links .button:hover {
   width: 200px;
-  border: 1px solid black;
-
 }
 
 .contact-links .button .icon {
@@ -415,39 +440,30 @@ strong{
   border-radius: 50px;
   line-height: 60px;
   transition: all 0.3s ease-out;
-  border: 1px solid black;
 }
 
-.button:nth-child(1) .icon{
+.button:nth-child(1) .icon:hover {
   background: rgb(49, 211, 240);
 }
 
-.button:nth-child(2) .icon{
+.button:nth-child(2) .icon:hover{
   background: rgb(87, 240, 87);
 }
 
-.button:nth-child(3) .icon{
+.button:nth-child(3) .icon:hover{
   background: #4267B2;
 }
 
-.button:nth-child(4) .icon{
-  background: #ff0000;
+.button:nth-child(4) .icon:hover{
+  background: #222021;
 }
 
-.button:nth-child(5) .icon{
-  background: #746569;
-}
-
-.button:nth-child(6) .icon{
-  background: #4267B2;
-}
-
-.button:nth-child(7) .icon{
-  background: #db6211;
+.button:nth-child(5) .icon:hover{
+  background: #e4a13d;
 }
 
 .button .icon a {
-  margin: 1rem;
+  margin: 1.1rem;
   font-size: 25px;
   line-height: 60px;
   transition: all 0.3s ease-out;
@@ -459,10 +475,8 @@ strong{
   transition: all 0.3s ease-out;
 }
 
-
-.contact-links .button:hover .icon i {
+.button:hover .icon a:hover {
   color: #fff;
-  
 }
 
 .contact-links .button span {
@@ -472,7 +486,6 @@ strong{
   margin-left: 10px;
   transition: all 0.3s ease-out;
 }
-
 
 .contact-links .button:nth-child(1) span{
   color: rgb(49, 211, 240);
@@ -487,21 +500,13 @@ strong{
 }
 
 .contact-links .button:nth-child(4) span{
-  color: #ff0000;
+  color: #141112;
 }
 
 .contact-links .button:nth-child(5) span{
-  color: #E1306C;
+  color: #e4a13d;
 }
 
-.contact-links .button:nth-child(6) span{
-  color: #4267B2;
-}
-
-.contact-links .button:nth-child(7) span{
-  color: #db6211;
-  
-}
 
 
 
