@@ -161,7 +161,7 @@ header a{
 }
 
 @media (max-width: 800px) {
-  .hideOnMobile, ul{
+  .hideOnMobile, nav ul{
     display: none;
   }
   .menu_button{
@@ -354,33 +354,6 @@ strong{
 
 /*---------CLASES----------*/
 
-.box-clases{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-}
-
-.fotos{
- display: grid;
- grid-template-columns: 1fr 1fr;
- place-items: center;
- max-width: 100%;
-}
-
-.box-clases img{
-  padding: 1rem;
-  max-width: 100%;
-}
-
-@media (max-width: 768px) {
-  .box-clases{
-    display: block; 
-  }
-  .box-clases img{
-    width: 100%;
-  }
-}
-
 .titulo-clases {
   text-align: center;
   padding-block: .5rem;
@@ -390,6 +363,68 @@ strong{
   border: 1px solid black;
   font-family: 'Sirin Stencil', sans-serif;
   margin-inline: 1rem;
+}
+
+.clases-box {
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+  margin: 1rem;
+  
+}
+
+@media (max-width: 800px) {
+  .clases-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tarjetas,
+  .tarjetas-avanzado {
+    min-width: 100%;
+  }
+}
+
+.tarjetas-avanzado, 
+.tarjetas  {
+  background-color: #fff;
+  border: 2px solid rgba(163, 73, 119, 0.8);
+  box-shadow: .3em .3em .3em rgba(163, 73, 119, 0.8);
+  border-radius: 10px;
+  max-width: 450px;  
+  padding: 1.5rem;
+}
+
+.clases-box h2 {
+  text-align: center;
+  font-family: 'Sirin Stencil', sans-serif; 
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.clases-box h3 {
+  text-align: center;
+  color: rgb(198, 113, 201);
+  text-decoration: underline;
+  font-size: 1.5rem;
+  padding: 1rem;
+
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  font-size: large;
+}
+
+.clases-box ul li {
+  font-size: larger;
+  padding: 3px;
+  margin-left: 1rem;
 }
 
 /*---------CONTACTOS  Y REDES SOCIALES--------- */
@@ -427,10 +462,6 @@ strong{
   border-radius: 50px;
   box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
   transition: all 0.3s ease-out;
-}
-
-.contact-links .button:hover {
-  width: 200px;
 }
 
 .contact-links .button .icon {
@@ -487,23 +518,23 @@ strong{
   transition: all 0.3s ease-out;
 }
 
-.contact-links .button:nth-child(1) span{
-  color: rgb(49, 211, 240);
+.button:nth-child(1) span{
+  background-color: rgb(49, 211, 240);
 }
 
-.contact-links .button:nth-child(2) span{
+.button:nth-child(2) span{
   color: rgb(87, 240, 87);
 }
 
-.contact-links .button:nth-child(3) span{
+.button:nth-child(3) span{
   color: #4267B2;
 }
 
-.contact-links .button:nth-child(4) span{
+.button:nth-child(4) span{
   color: #141112;
 }
 
-.contact-links .button:nth-child(5) span{
+.button:nth-child(5) span{
   color: #e4a13d;
 }
 
