@@ -317,9 +317,9 @@ header a{
   margin-inline: 1rem;
   padding: .5rem;
   border-radius: 10px;
-  border: 2px solid rgb(206, 125, 188);
+  border: 2px solid rgba(163, 73, 119, 0.8);
+  box-shadow: .3em .3em .3em rgba(163, 73, 119, 0.8);
   background-color: #fff;
-  box-shadow: .4em .4em .4em rgba(218, 138, 221, 0.7);
   min-height: 350px;
   min-width: 300px;
 }
