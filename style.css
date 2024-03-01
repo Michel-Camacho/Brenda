@@ -119,6 +119,8 @@ header a{
 
 .reserva a{
   border:1px solid #fff;
+  width: 10em;
+  margin: auto;
   text-align: center;
 }
 
@@ -438,105 +440,105 @@ span {
   background-color: rgb(177, 125, 125);
 }
 
-.contact-links{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  place-items: center;
+
+.contact-links {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
 }
 
-@media (min-width:800px) {
-  .contact-links{
-    display: grid;
-    grid-column: span 2;
+@media (max-width: 800px ) {
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid rgb(109, 50, 218);
+    width: fit-content;
   }
 }
 
-.contact-links .button{
-  height: 60px;
-  width: 60px;
-  float: left;
+a {
+  display: block;
+  font-size: 2rem;
   cursor: pointer;
-  margin: 0 5px;
-  overflow: hidden;
-  background: #fff;
-  border-radius: 50px;
-  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-  transition: all 0.3s ease-out;
 }
 
-.contact-links .button .icon {
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  border-radius: 50px;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
+.icon {
+  padding: 1rem;
+  width: 250px;
+  height: 100px;
+  text-align: center;
 }
 
-.button:nth-child(1) .icon:hover {
-  background: rgb(49, 211, 240);
+.icon a{
+  box-sizing: border-box;
+  position: relative;
+  padding: 0.5em;
+  &::before,
+  &::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-origin: center;
+    border-radius: 10px;
+  }
+
+  &::before {
+    border-top: 0.1em solid rgba(210, 124, 190, 1) ;
+    border-bottom: 0.1em solid rgba(210, 124, 190, 1);
+    background-color: rgba(218, 199, 223, 0.8);
+    z-index: -1;
+    transform: scale3d(0,1,1);
+  }
+
+  &::after {
+    border-left: 0.1em solid rgba(210, 124, 190, 1);
+    border-right: 0.1em solid rgba(210, 124, 190, 1);
+    transform: scale3d(1,0,1);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    transform: scale3d(1,1,1);
+    transition: transform 800ms;
+  }
 }
 
-.button:nth-child(2) .icon:hover{
-  background: rgb(87, 240, 87);
+span {
+  text-decoration: underline;
+  text-align: center;
+  display: none;
+  font-size: larger;
 }
 
-.button:nth-child(3) .icon:hover{
-  background: #4267B2;
+.fa-envelope {
+  color: rgb(4, 36, 105);
 }
 
-.button:nth-child(4) .icon:hover{
-  background: #222021;
+.fa-whatsapp {
+  color: rgb(0, 255, 106);
 }
 
-.button:nth-child(5) .icon:hover{
-  background: #e4a13d;
+.fa-facebook {
+  color: rgb(58, 101, 219);
 }
 
-.button .icon a {
-  margin: 1.1rem;
-  font-size: 25px;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
+.fa-tiktok {
+  color: rgb(19, 20, 20);
 }
 
-.button .icon i {
-  font-size: 25px;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
+.fa-instagram {
+  color: rgb(238, 160, 44);
+
 }
 
-.button:hover .icon a:hover {
-  color: #fff;
-}
 
-.contact-links .button span {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 60px;
-  margin-left: 10px;
-  transition: all 0.3s ease-out;
-}
-
-.button:nth-child(1) span{
-  background-color: rgb(49, 211, 240);
-}
-
-.button:nth-child(2) span{
-  color: rgb(87, 240, 87);
-}
-
-.button:nth-child(3) span{
-  color: #4267B2;
-}
-
-.button:nth-child(4) span{
-  color: #141112;
-}
-
-.button:nth-child(5) span{
-  color: #e4a13d;
-}
 
 
 
