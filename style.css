@@ -369,10 +369,11 @@ strong{
 
 .clases-box {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
+  align-items: center;
+  place-content: center;
   gap: 1rem;
   margin: 1rem;
-  
 }
 
 @media (max-width: 800px) {
@@ -395,7 +396,8 @@ strong{
   border: 2px solid rgba(163, 73, 119, 0.8);
   box-shadow: .3em .3em .3em rgba(163, 73, 119, 0.8);
   border-radius: 10px;
-  max-width: 450px;  
+  width: 450px; 
+  height: 600px; 
   padding: 1.5rem;
 }
 
@@ -428,6 +430,30 @@ span {
   padding: 3px;
   margin-left: 1rem;
 }
+
+.imagenes {
+  display: flex;
+  width: 600px;
+  height: 600px;
+}
+
+section img {
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+section img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
 
 /*---------CONTACTOS  Y REDES SOCIALES--------- */
 .titulo-footer h3 {
