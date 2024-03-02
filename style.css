@@ -454,7 +454,7 @@ span {
     justify-content: center;
     align-items: center;
     margin: auto;
-    border: 1px solid rgb(109, 50, 218);
+    border: 1px solid rgb(218, 50, 50);
     width: fit-content;
   }
 }
