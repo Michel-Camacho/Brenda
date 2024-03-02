@@ -370,7 +370,6 @@ strong{
 .clases-box {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   place-content: center;
   gap: 1rem;
   margin: 1rem;
@@ -382,22 +381,22 @@ strong{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    place-content: center;
+
   }
 
-  .tarjetas,
-  .tarjetas-avanzado {
+  .tarjetas {
     min-width: 100%;
   }
 }
 
-.tarjetas-avanzado, 
 .tarjetas  {
   background-color: #fff;
   border: 2px solid rgba(163, 73, 119, 0.8);
   box-shadow: .3em .3em .3em rgba(163, 73, 119, 0.8);
   border-radius: 10px;
   width: 450px; 
-  height: 600px; 
+ 
   padding: 1.5rem;
 }
 
@@ -405,7 +404,6 @@ strong{
   text-align: center;
   font-family: 'Sirin Stencil', sans-serif; 
   font-size: 2rem;
-  padding: 1rem;
 }
 
 .clases-box h3 {
@@ -413,8 +411,7 @@ strong{
   color: rgb(198, 113, 201);
   text-decoration: underline;
   font-size: 1.5rem;
-  padding: 1rem;
-
+  padding-block: .5rem;
 }
 
 span {
@@ -428,16 +425,16 @@ span {
 .clases-box ul li {
   font-size: larger;
   padding: 3px;
-  margin-left: 1rem;
+  margin-left: .5rem;
 }
 
 .imagenes {
   display: flex;
   width: 600px;
-  height: 600px;
+  height: 740px;
 }
 
-section img {
+.imagenes img {
   border-radius: 20px;
   border: 1px solid black;
   width: 0;
@@ -453,7 +450,6 @@ section img:hover {
   opacity: 1;
   filter: contrast(120%);
 }
-
 
 /*---------CONTACTOS  Y REDES SOCIALES--------- */
 .titulo-footer h3 {
