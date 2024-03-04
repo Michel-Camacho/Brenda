@@ -88,7 +88,7 @@ header {
   text-align: center;
   letter-spacing: 2,5;
   height: 100vh;
-  width: 100vw;
+  width: 100dvw;
   padding-top: 6rem;
 }
 
@@ -379,14 +379,9 @@ strong{
   .clases-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    place-content: center;
-
-  }
-
-  .tarjetas {
-    min-width: 100%;
+    max-width: 100%;
+    margin: 1rem;
   }
 }
 
@@ -395,8 +390,7 @@ strong{
   border: 2px solid rgba(163, 73, 119, 0.8);
   box-shadow: .3em .3em .3em rgba(163, 73, 119, 0.8);
   border-radius: 10px;
-  width: 450px; 
- 
+  max-width: 450px; 
   padding: 1.5rem;
 }
 
