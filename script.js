@@ -1,12 +1,10 @@
-const sidebar = document.querySelector('.sidebar');
-
-function showSidebar(){
-  sidebar.style.display = 'flex'   
+function hideSidebar() {
+  const sideBar = document.querySelector(".sidebar");
+  if (sideBar.style.display == "block") {
+      sideBar.style.display = "none";
+  } else {
+      sideBar.style.display = "block";
+  }
 }
 
-function hideSidebar(){
-  sidebar.style.display = 'none'
-    
-}
-
-
+document.addEventListener("click", hideSidebar);
