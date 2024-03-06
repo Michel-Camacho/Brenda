@@ -169,6 +169,10 @@ header a{
   .menu_button{
     display: block;
   }
+
+  .sidebar.active{
+    display: block;
+  }
 }
 
 @media (max-width:400px) {

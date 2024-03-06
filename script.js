@@ -1,10 +1,11 @@
-function hideSidebar() {
-  const sideBar = document.querySelector(".sidebar");
-  if (sideBar.style.display == "block") {
-      sideBar.style.display = "none";
-  } else {
-      sideBar.style.display = "block";
-  }
-}
+const menu_button = document.querySelector(".menu_button")
+const sideBar  = document.querySelector(".sidebar")
 
-document.addEventListener("click", hideSidebar);
+menu_button.addEventListener("click", ()=>{
+  sideBar.classList.toggle("active")
+})
+
+
+
+
+
