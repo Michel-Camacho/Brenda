@@ -158,7 +158,7 @@ header a{
   margin: 5px;
 }
 
-.menu_button{
+.menuButton{
   display: none;
 }
 
@@ -166,13 +166,13 @@ header a{
   .hideOnMobile, nav ul{
     display: none;
   }
-  .menu_button{
+  .menuButton{
     display: block;
   }
 
-  .sidebar.active{
-    display: block;
-  }
+  .sidebar.active{ 
+    display: block; 
+ } 
 }
 
 @media (max-width:400px) {

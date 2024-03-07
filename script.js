@@ -1,11 +1,11 @@
-const menu_button = document.querySelector(".menu_button")
+const menuButton = document.querySelector(".menuButton")
 const sideBar  = document.querySelector(".sidebar")
+const closeMenu = document.querySelector(".closeMenu")
 
-menu_button.addEventListener("click", ()=>{
-  sideBar.classList.toggle("active")
+menuButton.addEventListener("click", (showSideBAR)=>{
+  sideBar.style.display ="block"
 })
 
-
-
-
-
+closeMenu.addEventListener("click", (hideSideBar)=>{
+  sideBar.style.display ="none"
+})
