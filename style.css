@@ -99,7 +99,8 @@ header {
   letter-spacing: 2,5;
   height: 100vh;
   width: 100dvw;
-  padding-top: 6rem;
+  padding-top: 4rem;
+  margin-bottom: 1.7rem;
 }
 
 header h2 {
@@ -196,10 +197,10 @@ header a{
   display: flex;
   border: 2px solid rgb(206, 125, 188);
   border-radius: 10px;
-  padding-block: 1rem;
-  margin-block: 1rem;
+  padding-block: .5rem;
   background-color: #fff;
   margin-inline: 1rem;
+  margin-top: 1rem;
 }
 
 .about img {
@@ -268,13 +269,6 @@ header a{
   margin-inline: 1rem;
 }
 
-.foto2 h2 {
-  font-family: 'Sirin Stencil', sans-serif;
-  font-size: 7rem;
-  font-weight: 900;
-  color: #fff;
-}
-
 .foto2-titulo 
 .lista-de-servicios{
   container-type: inline-size;
@@ -296,7 +290,8 @@ header a{
   background: hsl(0, 0%, 100% / 0.1);
   backdrop-filter: blur(1rem);
   width: fit-content;
-  margin: auto;
+  margin: 1rem auto;
+  place-items: center;
 }
 
 .foto2 h3 {
@@ -308,7 +303,6 @@ header a{
 /*----------SERVICIOS----------*/
 
 .box {
-  padding-bottom: 1.5rem;
   display: grid;
   place-items: center;
   gap: 1rem;
