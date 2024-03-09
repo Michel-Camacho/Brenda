@@ -33,6 +33,16 @@ html {
   scroll-margin-top: 70px;
 } 
 
+.titulos-de-section {
+  font-family: 'Sirin Stencil', sans-serif;
+  border: 3px solid white;
+  text-align: center;
+  color: #fff;
+  margin-block: 1.5rem;
+  padding-block: .5rem; 
+  font-size: 3rem; 
+  background-color: rgb(177, 125, 125);
+}
 
 /*---------NAV-BAR---------*/
 nav {
@@ -296,19 +306,7 @@ header a{
 }
 
 /*----------SERVICIOS----------*/
-.novias-y-quinceañeras {
-  text-align: center;
-  border: solid 1px black;
-  background-color: rgb(177, 125, 125);
-  margin-block: 1.5rem;
-  padding-block: .5rem;
-  color: #fff;
-  font-size: 2rem;
-  font-family: 'Sirin Stencil', sans-serif;
-  margin-inline: 1rem;
-}
 
-/*---------SERVICIOS-GRID---------*/
 .box {
   padding-bottom: 1.5rem;
   display: grid;
@@ -360,17 +358,6 @@ strong{
 
 /*---------CLASES----------*/
 
-.titulo-clases {
-  text-align: center;
-  padding-block: .5rem;
-  font-size: 3rem;
-  background-color: rgb(177, 125, 125);
-  color: #ffffff;
-  border: 1px solid black;
-  font-family: 'Sirin Stencil', sans-serif;
-  margin-inline: 1rem;
-}
-
 .clases-box {
   display: flex;
   justify-content: space-between;
@@ -409,10 +396,10 @@ strong{
   color: rgb(198, 113, 201);
   text-decoration: underline;
   font-size: 1.5rem;
-  padding-block: .5rem;
+  padding-block: .5rem; 
 }
 
-span {
+.tarjetas h4 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -462,16 +449,6 @@ span {
 }
 
 /*---------CONTACTOS  Y REDES SOCIALES--------- */
-.titulo-footer h3 {
-  border: 1px solid black;
-  text-align: center;
-  color: #fff;
-  font-size: 3em;
-  margin: .5rem;  
-  font-family: 'Sirin Stencil', sans-serif;
-  background-color: rgb(177, 125, 125);
-}
-
 
 .contact-links {
   display: flex;
@@ -479,14 +456,13 @@ span {
   margin: auto;
 }
 
-@media (max-width: 800px ) {
+@media (max-width: 700px ) {
   .contact-links {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
-    border: 1px solid rgb(218, 50, 50);
     width: fit-content;
   }
 }
@@ -567,7 +543,6 @@ span {
 
 .fa-instagram {
   color: rgb(238, 160, 44);
-
 }
 
 
