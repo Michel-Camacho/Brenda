@@ -13,6 +13,11 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --title-font: 'Sirin Stencil', sans-serif;
+  --text-font:  'Playfair Display', serif;
+}
+
 #sobre-mi{
   scroll-margin-top: 70px;
 } 
@@ -34,7 +39,7 @@ html {
 } 
 
 .titulos-de-section {
-  font-family: 'Sirin Stencil', sans-serif;
+  font-family: var(--title-font);
   border: 3px solid white;
   text-align: center;
   color: #fff;
@@ -60,7 +65,7 @@ nav{
 
 nav a {
   position: relative;
-  font-family: 'Sirin Stencil', sans-serif;
+  font-family: var(--title-font);
   font-size: 2rem;
   color: #fff;
   font-weight: 600;
@@ -104,7 +109,7 @@ header {
 }
 
 header h2 {
-  font-family: 'Sirin Stencil', sans-serif;
+  font-family: var(--title-font);
   font-size: 4vw;   
   color: #662f1f;   
 }
@@ -112,7 +117,7 @@ header h2 {
 header h1 {
   font-size: 8vw;
   font-weight: 900;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--text-font);
   text-decoration: underline overline;
 }
 
@@ -239,7 +244,7 @@ header a{
   align-items: center;
   font-size: 2rem;
   color: #000;
-  font-family: 'Sirin Stencil', sans-serif;
+  font-family: var(--title-font);
   text-decoration: underline;
 }
 
@@ -247,7 +252,7 @@ header a{
   text-align: start;
   font-size: larger;
   text-wrap: wrap;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--text-font);
 }
 
 /*---------FOTO2---------*/
@@ -283,7 +288,7 @@ header a{
 }
 
 .foto2 p {
-  font-family: 'Playfair Display', serif;   
+  font-family: var(--text-font);   
   color: #000;
   border: solid black;
   border-radius: 10px;
@@ -323,7 +328,7 @@ header a{
 }
 
 .wrap h3 {
-  font-family: 'Sirin Stencil', sans-serif; 
+  font-family: var(--title-font); 
   color: #000;
   font-size: 2rem;
   text-align: center;
@@ -332,14 +337,14 @@ header a{
 }
 
 .wrap p {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--text-font);
   text-align: center;
   line-height: 1.5em;
   font-size: large;
 }
 
 pre{
-  font-family: 'Playfair Display', serif;
+  font-family: var(--text-font);
   text-align: left;
   min-height: 250px;
   min-width: 300px;
@@ -381,7 +386,7 @@ strong{
 
 .clases-box h2 {
   text-align: center;
-  font-family: 'Sirin Stencil', sans-serif; 
+  font-family: var(--title-font); 
   font-size: 2rem;
 }
 
