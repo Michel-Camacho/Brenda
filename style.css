@@ -342,14 +342,13 @@ header a{
   font-size: large;
 }
 
-pre{
+pre {
   font-family: var(--text-font);
   text-align: left;
   min-height: 250px;
-  min-width: 440px;
+  min-width: 350px;
   font-size: large ;
-  
-}
+} 
 
 strong{
   font-size: 1rem;
