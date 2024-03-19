@@ -1,10 +1,10 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   min-height: 100vh;
   background-color: #c990903d;
 }
@@ -14,29 +14,29 @@ html {
 }
 
 :root {
-  --title-font: 'Sirin Stencil', sans-serif;
-  --text-font:  'Playfair Display', serif;
+  --title-font: "Sirin Stencil", sans-serif;
+  --text-font: "Playfair Display", serif;
 }
 
-#About-Me{
-  scroll-margin-top: 70px;
-} 
-
-#Services{
+#About-Me {
   scroll-margin-top: 70px;
 }
 
-#Prices{
+#Services {
   scroll-margin-top: 70px;
-} 
+}
 
-#Classes{
+#Prices {
   scroll-margin-top: 70px;
-} 
+}
 
-#Contacts{
+#Classes {
   scroll-margin-top: 70px;
-} 
+}
+
+#Contacts {
+  scroll-margin-top: 70px;
+}
 
 .Section-Title {
   font-family: var(--title-font);
@@ -44,8 +44,8 @@ html {
   text-align: center;
   color: #fff;
   margin-block: 1.5rem;
-  padding-block: .5rem; 
-  font-size: 3rem; 
+  padding-block: 0.5rem;
+  font-size: 3rem;
   background-color: rgb(177, 125, 125);
 }
 
@@ -57,7 +57,7 @@ nav {
   z-index: 1;
 }
 
-nav{
+nav {
   height: fit-content;
   position: fixed;
   width: 100%;
@@ -74,7 +74,7 @@ nav a {
   background-color: rgba(201, 142, 98, 0.63);
 }
 
-nav a::after{
+nav a::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -86,11 +86,11 @@ nav a::after{
   transform: scale(0);
 }
 
-nav a:hover::after{
-  transform: scale(1); 
+nav a:hover::after {
+  transform: scale(1);
 }
 
-nav a:hover{
+nav a:hover {
   background-color: rgb(192, 126, 126);
   transition: 0.5s ease-in-out;
 }
@@ -102,7 +102,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  letter-spacing: 2,5;
+  letter-spacing: 2, 5;
   height: 100vh;
   width: 100dvw;
   padding-top: 4rem;
@@ -111,8 +111,8 @@ header {
 
 header h2 {
   font-family: var(--title-font);
-  font-size: 4vw;   
-  color: #662f1f;   
+  font-size: 4vw;
+  color: #662f1f;
 }
 
 header h1 {
@@ -124,28 +124,27 @@ header h1 {
 
 header p {
   font-size: 5vw;
-  color: #662f1f;   
+  color: #662f1f;
 }
 
-header a{
+header a {
   padding: 1rem;
   color: #fff;
   font-size: 1.5rem;
   text-decoration: none;
 }
 
-.reservation a{
-  border:1px solid #fff;
+.reservation a {
+  border: 1px solid #fff;
   width: 10em;
   margin: auto;
   text-align: center;
 }
 
-.reservation a:hover{
+.reservation a:hover {
   background-color: rgb(177, 125, 125);
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-
 
 /*---------sidebar---------*/
 
@@ -165,35 +164,36 @@ header a{
   align-items: center;
 }
 
-.sidebar li{
+.sidebar li {
   display: flex;
   width: 100%;
 }
 
-.sidebar a{
+.sidebar a {
   width: 100%;
   margin: 5px;
 }
 
-.menuButton{
+.menuButton {
   display: none;
 }
 
 @media (max-width: 800px) {
-  .hideOnMobile, nav ul{
+  .hideOnMobile,
+  nav ul {
     display: none;
   }
-  .menuButton{
+  .menuButton {
     display: block;
   }
 
-  .sidebar.active{ 
-    display: block; 
- } 
+  .sidebar.active {
+    display: block;
+  }
 }
 
-@media (max-width:400px) {
-  .sidebar{
+@media (max-width: 400px) {
+  .sidebar {
     width: 100%;
   }
 }
@@ -203,45 +203,45 @@ header a{
   display: flex;
   border: 2px solid rgb(206, 125, 188);
   border-radius: 10px;
-  padding-block: .5rem;
+  padding-block: 0.5rem;
   background-color: #fff;
   margin-inline: 1rem;
   margin-top: 1rem;
 }
 
 .about img {
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   border-radius: 10px;
   max-width: 320px;
   float: left;
 }
 
-.profile-picture{
+.profile-picture {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 @media (max-width: 768px) {
-  .about{
+  .about {
     display: block;
   }
 
-  .about img{
+  .about img {
     width: 100%;
-    margin: auto; 
+    margin: auto;
   }
 
-  .about h3{
+  .about h3 {
     text-align: center;
   }
 }
 
-.text2{
+.text2 {
   margin: 1rem;
 }
 
-.text2 h3{
+.text2 h3 {
   align-items: center;
   font-size: 2rem;
   color: #000;
@@ -249,7 +249,7 @@ header a{
   text-decoration: underline;
 }
 
-.text2 p{
+.text2 p {
   text-align: start;
   font-size: larger;
   text-wrap: wrap;
@@ -267,14 +267,13 @@ header a{
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  letter-spacing: 2,5;
+  letter-spacing: 2, 5;
   border-radius: 10px;
   max-height: fit-content;
   margin-inline: 1rem;
 }
 
-.photo2-title 
-.price-list{
+.photo2-title .price-list {
   container-type: inline-size;
 }
 
@@ -282,12 +281,13 @@ header a{
   font-size: 7cqi;
 }
 
-.price-list > p, h3 {
+.price-list > p,
+h3 {
   font-size: 5cqi;
 }
 
 .photo2 p {
-  font-family: var(--text-font);   
+  font-family: var(--text-font);
   color: #000;
   border: solid black;
   border-radius: 10px;
@@ -301,7 +301,7 @@ header a{
 .photo2 h3 {
   justify-content: space-around;
   margin-block: 2rem;
-  color: #662f1f;   
+  color: #662f1f;
 }
 
 /*----------SERVICIOS----------*/
@@ -311,28 +311,26 @@ header a{
   place-items: center;
   gap: 1rem;
   margin-inline: 1rem;
-  grid-template-columns: 
-    repeat(auto-fit, 
-      minmax(min(22rem, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr));
 }
 
 .wrap {
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 10px;
   border: 2px solid rgba(163, 73, 119, 0.8);
-  box-shadow: .3em .3em .3em rgba(163, 73, 119, 0.8);
+  box-shadow: 0.3em 0.3em 0.3em rgba(163, 73, 119, 0.8);
   background-color: #fff;
   min-height: 350px;
   min-width: 300px;
 }
 
 .wrap h3 {
-  font-family: var(--title-font); 
+  font-family: var(--title-font);
   color: #000;
   font-size: 2rem;
   text-align: center;
-  text-decoration: underline ;
-  padding-bottom: 1rem;  
+  text-decoration: underline;
+  padding-bottom: 1rem;
 }
 
 .wrap p {
@@ -347,9 +345,9 @@ pre {
   text-align: left;
   min-height: 250px;
   min-width: 200px;
-} 
+}
 
-strong{
+strong {
   font-size: 1rem;
   text-decoration: underline;
 }
@@ -374,18 +372,18 @@ strong{
   }
 }
 
-.tarjetas  {
+.tarjetas {
   background-color: #fff;
   border: 2px solid rgba(163, 73, 119, 0.8);
-  box-shadow: .3em .3em .3em rgba(163, 73, 119, 0.8);
+  box-shadow: 0.3em 0.3em 0.3em rgba(163, 73, 119, 0.8);
   border-radius: 10px;
-  max-width: 450px; 
+  max-width: 450px;
   padding: 1.5rem;
 }
 
 .clases-box h2 {
   text-align: center;
-  font-family: var(--title-font); 
+  font-family: var(--title-font);
   font-size: 2rem;
 }
 
@@ -394,7 +392,7 @@ strong{
   color: rgb(198, 113, 201);
   text-decoration: underline;
   font-size: 1.5rem;
-  padding-block: .5rem; 
+  padding-block: 0.5rem;
 }
 
 .tarjetas h4 {
@@ -408,7 +406,7 @@ strong{
 .clases-box ul li {
   font-size: larger;
   padding: 3px;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .imagenes-box {
@@ -423,7 +421,7 @@ strong{
 .imagenes {
   display: flex;
   justify-content: center;
-  gap: .5rem;
+  gap: 0.5rem;
   width: 600px;
   height: 600px;
 }
@@ -431,12 +429,12 @@ strong{
 .imagenes img {
   border-radius: 50px;
   border: 2px solid rgba(163, 73, 119, 0.8);
-  box-shadow: .3em .3em .3em rgba(163, 73, 119, 0.8);
+  box-shadow: 0.3em 0.3em 0.3em rgba(163, 73, 119, 0.8);
   width: 0;
   flex-grow: 1;
   object-fit: cover;
-  opacity: .8;
-  transition: .5s ease;
+  opacity: 0.8;
+  transition: 0.5s ease;
 }
 
 .imagenes img:hover {
@@ -450,11 +448,11 @@ strong{
 
 .contact-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: auto;
 }
 
-@media (max-width: 700px ) {
+@media (max-width: 700px) {
   .contact-links {
     display: flex;
     flex-direction: column;
@@ -478,13 +476,13 @@ a {
   text-align: center;
 }
 
-.icon a{
+.icon a {
   box-sizing: border-box;
   position: relative;
   padding: 0.5em;
   &::before,
   &::after {
-    content: '';
+    content: "";
     box-sizing: border-box;
     position: absolute;
     top: 0;
@@ -496,22 +494,22 @@ a {
   }
 
   &::before {
-    border-top: 0.1em solid rgba(210, 124, 190, 1) ;
+    border-top: 0.1em solid rgba(210, 124, 190, 1);
     border-bottom: 0.1em solid rgba(210, 124, 190, 1);
     background-color: rgba(218, 199, 223, 0.8);
     z-index: -1;
-    transform: scale3d(0,1,1);
+    transform: scale3d(0, 1, 1);
   }
 
   &::after {
     border-left: 0.1em solid rgba(210, 124, 190, 1);
     border-right: 0.1em solid rgba(210, 124, 190, 1);
-    transform: scale3d(1,0,1);
+    transform: scale3d(1, 0, 1);
   }
 
   &:hover::before,
   &:hover::after {
-    transform: scale3d(1,1,1);
+    transform: scale3d(1, 1, 1);
     transition: transform 800ms;
   }
 }
@@ -531,10 +529,6 @@ span {
   color: rgb(0, 255, 106);
 }
 
-.fa-facebook {
-  color: rgb(58, 101, 219);
-}
-
 .fa-tiktok {
   color: rgb(19, 20, 20);
 }
@@ -542,20 +536,3 @@ span {
 .fa-instagram {
   color: rgb(238, 160, 44);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
