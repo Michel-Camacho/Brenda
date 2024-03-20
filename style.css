@@ -210,7 +210,7 @@ header a {
 }
 
 .about img {
-  padding-left: 0.5rem;
+  padding-inline: 0.5rem;
   border-radius: 10px;
   max-width: 320px;
   float: left;
@@ -259,7 +259,7 @@ header a {
 /*---------FOTO2---------*/
 
 .photo2 {
-  background-image: url(Imagenes/servicios.png);
+  background-image: url(Imagenes/servicios.webp);
   display: grid;
   grid-template-rows: auto;
   margin: auto;
@@ -470,7 +470,6 @@ a {
 }
 
 .icon {
-  padding: 1rem;
   width: 250px;
   height: 100px;
   text-align: center;
