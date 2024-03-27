@@ -299,8 +299,11 @@ h3 {
 }
 
 .photo2 h3 {
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  display: flex;
+  justify-content: flex-start;
   margin-block: 2rem;
+  margin-inline-start: 0.5em;
   color: #662f1f;
 }
 
@@ -378,6 +381,15 @@ strong {
   box-shadow: 0.3em 0.3em 0.3em rgba(163, 73, 119, 0.8);
   border-radius: 10px;
   max-width: 450px;
+  padding: 1.5rem;
+}
+
+.tarjetas1 {
+  background-color: #fff;
+  border: 2px solid rgba(163, 73, 119, 0.8);
+  box-shadow: 0.3em 0.3em 0.3em rgba(163, 73, 119, 0.8);
+  border-radius: 10px;
+  max-width: 400px;
   padding: 1.5rem;
 }
 
