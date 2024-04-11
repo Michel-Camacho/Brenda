@@ -304,7 +304,8 @@ h3 {
   justify-content: flex-start;
   margin-block: 2rem;
   margin-inline-start: 0.5em;
-  color: #662f1f;
+  /* color: #662f1f; */
+  color: #fff;
 }
 
 /*----------SERVICIOS----------*/
@@ -341,13 +342,6 @@ h3 {
   text-align: center;
   line-height: 1.5em;
   font-size: large;
-}
-
-pre {
-  font-family: var(--text-font);
-  text-align: left;
-  min-height: 250px;
-  min-width: 200px;
 }
 
 strong {
@@ -546,4 +540,17 @@ span {
 
 .fa-instagram {
   color: rgb(238, 160, 44);
+}
+
+/* Button */
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.fa-circle-chevron-up {
+  height: 60px;
+  width: 60px;
+  color: rgb(177, 125, 125);
 }
