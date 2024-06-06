@@ -6,7 +6,7 @@
 
 body {
   min-height: 100vh;
-  background-color: #c990903d;
+  background-color: #f8ecfd;
 }
 
 html {
@@ -389,6 +389,7 @@ strong {
 
 .clases-box h2 {
   text-align: center;
+  text-decoration: underline;
   font-family: var(--title-font);
   font-size: 2rem;
 }
