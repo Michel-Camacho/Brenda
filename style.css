@@ -6,7 +6,7 @@
 
 body {
   min-height: 100vh;
-  background-color: #f8ecfd;
+  background-color: #ffffff;
 }
 
 html {
@@ -46,7 +46,7 @@ html {
   margin-block: 1.5rem;
   padding-block: 0.5rem;
   font-size: 3rem;
-  background-color: rgb(177, 125, 125);
+  background-color: rgba(170, 120, 130);
 }
 
 /*---------NAV-BAR---------*/
@@ -417,12 +417,11 @@ strong {
 }
 
 .imagenes-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: 5px solid rgb(173, 107, 107);
+  border-radius: 10px;
   padding: 1rem;
-  margin: 1rem;
+  margin: auto;
+  width: fit-content;
 }
 
 .imagenes {
@@ -435,7 +434,7 @@ strong {
 
 .imagenes img {
   border-radius: 50px;
-  border: 2px solid rgba(163, 73, 119, 0.8);
+  border: 1px solid rgba(163, 73, 119, 0.8);
   box-shadow: 0.3em 0.3em 0.3em rgba(163, 73, 119, 0.8);
   width: 0;
   flex-grow: 1;
@@ -545,6 +544,8 @@ span {
 
 /* Button */
 button {
+  float: right;
+  margin-left: auto;
   border: none;
   background-color: transparent;
   cursor: pointer;
