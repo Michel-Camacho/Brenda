@@ -201,7 +201,8 @@ header a {
 /*---------SOBRE MI---------*/
 .about {
   display: flex;
-  border: 2px solid rgb(206, 125, 188);
+  border: 1px solid rgba(163, 73, 119, 0.8);
+  box-shadow: 0.3em 0.3em 0.3em rgba(163, 73, 119, 0.8);
   border-radius: 10px;
   padding-block: 0.5rem;
   background-color: #fff;
@@ -321,7 +322,7 @@ h3 {
 .wrap {
   padding: 0.5rem;
   border-radius: 10px;
-  border: 2px solid rgba(163, 73, 119, 0.8);
+  border: 1px solid rgba(163, 73, 119, 0.8);
   box-shadow: 0.3em 0.3em 0.3em rgba(163, 73, 119, 0.8);
   background-color: #fff;
   min-height: 350px;
@@ -371,7 +372,7 @@ strong {
 
 .tarjetas {
   background-color: #fff;
-  border: 2px solid rgba(163, 73, 119, 0.8);
+  border: 1px solid rgba(163, 73, 119, 0.8);
   box-shadow: 0.3em 0.3em 0.3em rgba(163, 73, 119, 0.8);
   border-radius: 10px;
   max-width: 450px;
@@ -417,11 +418,11 @@ strong {
 }
 
 .imagenes-box {
+  display: flex;
+  justify-content: center;
   border: 5px solid rgb(173, 107, 107);
   border-radius: 10px;
   padding: 1rem;
-  margin: auto;
-  width: fit-content;
 }
 
 .imagenes {
